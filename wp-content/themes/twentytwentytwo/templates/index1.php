@@ -6,6 +6,7 @@
 <html>
 
 <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -31,7 +32,7 @@
 	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.propertygurugroup.com/#organization","name":"PropertyGuru","url":"https://www.propertygurugroup.com/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://www.propertygurugroup.com/#logo","inLanguage":"en-US","url":"https://www.propertygurugroup.com/wp-content/uploads/2022/03/Group.svg","contentUrl":"https://www.propertygurugroup.com/wp-content/uploads/2022/03/Group.svg","width":197,"height":46,"caption":"PropertyGuru"},"image":{"@id":"https://www.propertygurugroup.com/#logo"}},{"@type":"WebSite","@id":"https://www.propertygurugroup.com/#website","url":"https://www.propertygurugroup.com/","name":"PropertyGuru Group","description":"Property Guru","publisher":{"@id":"https://www.propertygurugroup.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.propertygurugroup.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.propertygurugroup.com/newsroom/#primaryimage","inLanguage":"en-US","url":"https://www.propertygurugroup.com/wp-content/uploads/2021/11/PGG_Masthead_Image_Newsroom_Desktop_2143x881.jpg","contentUrl":"https://www.propertygurugroup.com/wp-content/uploads/2021/11/PGG_Masthead_Image_Newsroom_Desktop_2143x881.jpg","width":1400,"height":576},{"@type":"WebPage","@id":"https://www.propertygurugroup.com/newsroom/#webpage","url":"https://www.propertygurugroup.com/newsroom/","name":"PropertyGuru's latest news & views | PropertyGuru Group","isPartOf":{"@id":"https://www.propertygurugroup.com/#website"},"primaryImageOfPage":{"@id":"https://www.propertygurugroup.com/newsroom/#primaryimage"},"datePublished":"2017-09-20T06:43:02+00:00","dateModified":"2022-03-07T13:08:12+00:00","description":"Check here for the latest announcements, property news, market insights and news on PropertyGuru","breadcrumb":{"@id":"https://www.propertygurugroup.com/newsroom/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.propertygurugroup.com/newsroom/"]}]},{"@type":"BreadcrumbList","@id":"https://www.propertygurugroup.com/newsroom/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.propertygurugroup.com/"},{"@type":"ListItem","position":2,"name":"Newsroom"}]}]}</script>
 	<!-- / Yoast SEO plugin. -->
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
@@ -421,38 +422,38 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
             
                 
       <?php 
-            
+                $args = array(         
+                    'post_status' => 'publish',
+                    'posts_per_page' => 3,  
                     
-            $args = array(         
-                'post_status' => 'publish',
-                'posts_per_page' => 3,  
+                    );
                 
-                );
-            
-            $loop = new WP_Query( $args ); 
+                $loop = new WP_Query( $args );
                 
-            while ( $loop->have_posts() ) : $loop->the_post(); 
-                ?>
-                <h3><?php the_title(); ?></h3> 
-                </p><?php the_excerpt(); ?></p>
-            <?php echo get_the_post_thumbnail(); ?>
-                <?php
-            endwhile;
+                
+                    
+                while ( $loop->have_posts() ) : $loop->the_post(); 
+                    ?>
 
-                // $u_time = get_the_time('U'); 
-                // $u_modified_time = get_the_modified_time('U'); 
-                // if ($u_modified_time >= $u_time + 86400) { 
-                // echo "<p>Last modified on "; 
-                // the_modified_time('F jS, Y'); 
-                // echo " at "; 
-                // the_modified_time(); 
-                // echo "</p> "; } 
+                        <?php echo get_the_post_thumbnail(); ?>
+
+                        <h5><?php the_title(); ?></h5>
+                    
+                        </p><?php the_excerpt(); ?></p>
+                
+                            
+                    
+                            <?php
+                        endwhile;
+                        ?>
+
+                <?php
                 the_posts_pagination( array(
                     'mid_size' => 2,
                     'prev_text' => __( 'Previous Page', 'textdomain' ),
                     'next_text' => __( 'Next Page', 'textdomain' ),
                     ) );
-                
+                        
             
 
             ?>
