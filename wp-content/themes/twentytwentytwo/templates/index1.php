@@ -360,13 +360,17 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                   <select name="category">
                     <option value="">All categories</option>
                                                                         <option value="19"
-                    >A                  </option>
+                    >One                </option>
                    
                                                       <option value="18"
-                    >H                 </option>
+                    >Two                </option>
                    
                                                       <option value="15"
-                    >B                  </option>
+                    >Three                  </option>
+                    <option value="15"
+                    >Four                  </option>
+                    <option value="15"
+                    >Five                  </option>
                    
                                      
                                                     </select>
@@ -377,7 +381,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                   <option value="">All countries
                 </option>
                                                 <option value="8"
-                  >Indonesia                </option>
+                  >India                </option>
                                 <option value="9"
                   >Malaysia                </option>
                                 <option value="10"
@@ -420,54 +424,90 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
     <div class="news-list__block g-cleared">
       <div class="news-list__row g-nopadding col-lg-12 col-md-12 col-xs-12">
             
-                
-      <?php 
-                $args = array(         
-                    'post_status' => 'publish',
-                    'posts_per_page' => 3,  
+         <?php       
+
+
                     
-                    );
-                
-                $loop = new WP_Query( $args );
-                
-                
-                    
-                while ( $loop->have_posts() ) : $loop->the_post(); 
-                    ?>
-
-                        <?php echo get_the_post_thumbnail(); ?>
-
-                        <h5><?php the_title(); ?></h5>
-                    
-                        </p><?php the_excerpt(); ?></p>
-                
-                            
-                    
-                            <?php
-                        endwhile;
-                        ?>
-
-                <?php
-                the_posts_pagination( array(
-                    'mid_size' => 2,
-                    'prev_text' => __( 'Previous Page', 'textdomain' ),
-                    'next_text' => __( 'Next Page', 'textdomain' ),
-                    ) );
-                        
-            
-
-            ?>
-                              <div class="news-list__item  g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                
-            </div>
-                                  </div>
-        </div>
 
 
+
+      $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+ 
+  $args = array(
+               'posts_per_page' => 2,// query last 5 posts  
+               'paged' => $paged
+             );
+			 
+$customQuery = new WP_Query($args);
+
+
+?> 
+
+<!-- Step 2: Display the Posts we Queried in the Step 1 -->
+
+<div class="wrap">
+ 
+	<div id="primary" class="content-area">
+		
+		<main id="main" class="site-main" role="main">
+		
+			<?php
+			
+			if($customQuery->have_posts() ): 
+			
+               while($customQuery->have_posts()) :
+                   
+				       $customQuery->the_post();
+					   
+					     global $post;
+                ?>
+		
+		          <div class ="inner-content-wrap">
+				  
+						<ul class ="cq-posts-list">
+						
+						 <li>
+						   <h3 class ="cq-h3"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h3>
+								<div>
+								  <ul>
+									<div>
+											<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+									</div>
+								  </ul>
+								  
+								  <ul>
+											<p><?php echo the_content(); ?></p>
+								  </ul>
+								
+								</div>
+						  </li>
+						</ul>
+				</div> <!-- end blog posts -->
+						  
+			<?php endwhile; 
+			
+	     endif; 
+	 
+			 wp_reset_query();
+			 
+			// Step  3 : Call the Pagination Function Here  
+			 
+			if (function_exists("cq_pagination")) {
+				
+				  cq_pagination($customQuery->max_num_pages); 
+			 
+			}
+					
+			?>	
+	
+			</main><!-- #main -->
+			
+		</div><!-- #primary -->
+			
+	</div><!-- .wrap -->
         <div class="custom-pagination">
-            
-              <ul class="page-numbers"><li><span class="previous page-numbers"> < </span></li><li><span aria-current="page" class="page-numbers current">1</span></li><li><a class="page-numbers" href="?pageid=2">2</a></li><li><a class="page-numbers" href="?pageid=3">3</a></li><li><a class="page-numbers" href="?pageid=4">4</a></li><li><a class="page-numbers" href="?pageid=5">5</a></li><li><a class="next page-numbers" href="?pageid=12"> > </a></li></ul>        </div>
-   </div>
+              <!-- <ul class="page-numbers"><li><span class="previous page-numbers"> < </span></li><li><span aria-current="page" class="page-numbers current">1</span></li><li><a class="page-numbers" href="?pageid=2">2</a></li><li><a class="page-numbers" href="?pageid=3">3</a></li><li><a class="page-numbers" href="?pageid=4">4</a></li><li><a class="page-numbers" href="?pageid=5">5</a></li><li><a class="next page-numbers" href="?pageid=12"> > </a></li></ul>        </div> -->
+        </div>
  </section>
 </div>
 <!-- news portion ends here -->
