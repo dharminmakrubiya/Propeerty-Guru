@@ -227,3 +227,45 @@ function cq_pagination($pages = '', $range = 4)
 		echo "</ul></nav>\n";
 	}
 }
+
+
+
+/**
+ * get_event_start_date function.
+ *
+ * @access public
+ * @param int $post (default: null)
+ * @return string
+ */
+  
+function get_event_YOUR_CUSTOM_FIELD_NAME( $post = null ) 
+{
+  
+    $post = get_post( $post );
+  
+    if ( $post->post_type !== 'event_listing' ) 
+        return '';
+     
+    $event_FIELD_NAME   = $post->_YOUR_CUSTOM_FIELD_NAME;
+  
+    return apply_filters( 'display_event_FIELD_NAME', $event_FIELD_NAME, $post );
+ 
+}
+  
+/**
+ * Display or retrieve the current event custom field.
+ *
+ * @access public
+ * @param mixed $id (default: null)
+ * @return void
+ */
+  
+function display_event_YOUR_CUSTOM_FIELD_NAME( $before = '', $after = '', $echo = true, $post = null ) 
+{
+$event_CUSTOM_FIELD_NAME = get_event_YOUR_CUSTOM_FIELD_NAME( $post );
+$event_CUSTOM_FIELD_NAME = $before . $event_CUSTOM_FIELD_NAME . $after;
+if ( $echo )
+echo $event_CUSTOM_FIELD_NAME;
+else
+    return $event_CUSTOM_FIELD_NAME;
+}
