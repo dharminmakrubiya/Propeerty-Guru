@@ -1,7 +1,3 @@
-/**
-* Template Name: My Template
-*/
-
 <!DOCTYPE html>
 <html>
 
@@ -395,6 +391,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 
             </div>
             <div class="filter__item">
+                
               <select name="date_filter">
                 <option value="">All years</option>
                                                 <option value="39"
@@ -424,21 +421,17 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
     <div class="news-list__block g-cleared">
       <div class="news-list__row g-nopadding col-lg-12 col-md-12 col-xs-12">
             
-         <?php       
-
-
-                    
-
-
-
+<?php
+    
       $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
  
   $args = array(
-               'posts_per_page' => 2,// query last 5 posts  
+               'posts_per_page' => 2,
                'paged' => $paged
              );
 			 
 $customQuery = new WP_Query($args);
+
 
 
 ?> 
