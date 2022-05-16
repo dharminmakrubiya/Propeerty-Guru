@@ -324,7 +324,6 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
         <div class="container">
            
             <span class="seperate-title__span-text">HEADLINE NEWS</span>
-
             <a href="https://www.propertygurugroup.com/newsroom/propertyguru-lists-on-the-nyse/" >
                 <h3>PropertyGuru Lists on the NYSE</h3>
             </a>
@@ -335,7 +334,6 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
             </div>
             <div class="divider-br"></div>
         </div>
-
     </div>-->
     <div class="container">
         <div class="divider-br"></div>
@@ -558,7 +556,6 @@ $customQuery = new WP_Query($args);
 </ul></div>
                 </div>
                 <!--<div class="col-sm-3 col-md-2 footer__col footer__col-padding">
-
                     <h6 class='white'><a href="/property-seekers/" class="white">Property Seekers</a></h6>
                                     </div>-->
                 <div class="col-sm-3 col-md-3 footer__col footer__col-padding">
@@ -682,14 +679,12 @@ $customQuery = new WP_Query($args);
 </ul></div>
                 </div>
                 <div class="col-md-2 footer__col footer__col-list">
-
                     <h6 class='white'><a href="/property-seekers/" class="white">Property Seekers</a></h6>
                     <div class="menu-footer-group-1-container"><ul id="menu-footer-group-4" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3135"><a href="https://www.propertygurugroup.com/our-story/">Our Story</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3134"><a href="https://www.propertygurugroup.com/our-leadership/">Our Leadership</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3133"><a href="https://www.propertygurugroup.com/sustainability/">Sustainability</a></li>
 </ul></div>                </div>
                 <div class="col-md-2 footer__col footer__col-list">
-
                     <h6 class='white'><a href="/partner-with-us/" class="white">Partner With Us</a></h6>
                     <div class="menu-footer-group-8-container"><ul id="menu-footer-group-10" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3136"><a href="https://www.propertygurugroup.com/property-seekers/">Property Seekers</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3137"><a href="/our-services/#real_estate_agents">Real Estate Agents</a></li>
@@ -701,17 +696,11 @@ $customQuery = new WP_Query($args);
                     <div class="menu-footer-group-9-container"><ul id="menu-footer-group-11" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3140"><a href="https://www.propertygurugroup.com/our-people-culture/">Our People &#038; Culture</a></li>
 </ul></div>                </div>
                 <div class="col-md-2 footer__col footer__col-list ">
-
                     <h6 class='white'><a href="/Investors" class="white">Investors</a></h6>
                 </div>
                 <div class="col-md-2 footer__col footer__col-list ">
-
                     <h6 class='white'><a href="/newsroom" class="white">Newsroom</a></h6>
                 </div>
-
-
-
-
             </div> -->
 
 
