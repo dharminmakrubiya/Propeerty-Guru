@@ -1,11 +1,12 @@
+<?php 
 /**
-* Template Name: Blog Template
+* Template Name: News Template
  */
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -31,7 +32,7 @@
 	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.propertygurugroup.com/#organization","name":"PropertyGuru","url":"https://www.propertygurugroup.com/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://www.propertygurugroup.com/#logo","inLanguage":"en-US","url":"https://www.propertygurugroup.com/wp-content/uploads/2022/03/Group.svg","contentUrl":"https://www.propertygurugroup.com/wp-content/uploads/2022/03/Group.svg","width":197,"height":46,"caption":"PropertyGuru"},"image":{"@id":"https://www.propertygurugroup.com/#logo"}},{"@type":"WebSite","@id":"https://www.propertygurugroup.com/#website","url":"https://www.propertygurugroup.com/","name":"PropertyGuru Group","description":"Property Guru","publisher":{"@id":"https://www.propertygurugroup.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.propertygurugroup.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.propertygurugroup.com/newsroom/#primaryimage","inLanguage":"en-US","url":"https://www.propertygurugroup.com/wp-content/uploads/2021/11/PGG_Masthead_Image_Newsroom_Desktop_2143x881.jpg","contentUrl":"https://www.propertygurugroup.com/wp-content/uploads/2021/11/PGG_Masthead_Image_Newsroom_Desktop_2143x881.jpg","width":1400,"height":576},{"@type":"WebPage","@id":"https://www.propertygurugroup.com/newsroom/#webpage","url":"https://www.propertygurugroup.com/newsroom/","name":"PropertyGuru's latest news & views | PropertyGuru Group","isPartOf":{"@id":"https://www.propertygurugroup.com/#website"},"primaryImageOfPage":{"@id":"https://www.propertygurugroup.com/newsroom/#primaryimage"},"datePublished":"2017-09-20T06:43:02+00:00","dateModified":"2022-03-07T13:08:12+00:00","description":"Check here for the latest announcements, property news, market insights and news on PropertyGuru","breadcrumb":{"@id":"https://www.propertygurugroup.com/newsroom/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.propertygurugroup.com/newsroom/"]}]},{"@type":"BreadcrumbList","@id":"https://www.propertygurugroup.com/newsroom/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.propertygurugroup.com/"},{"@type":"ListItem","position":2,"name":"Newsroom"}]}]}</script>
 	<!-- / Yoast SEO plugin. -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
@@ -327,6 +328,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
         <div class="container">
            
             <span class="seperate-title__span-text">HEADLINE NEWS</span>
+
             <a href="https://www.propertygurugroup.com/newsroom/propertyguru-lists-on-the-nyse/" >
                 <h3>PropertyGuru Lists on the NYSE</h3>
             </a>
@@ -337,6 +339,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
             </div>
             <div class="divider-br"></div>
         </div>
+
     </div>-->
     <div class="container">
         <div class="divider-br"></div>
@@ -355,19 +358,15 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                 <h6>Filter News</h6>
                 <div class="filter__item">
                   <select name="category">
-                    <option value="" >All categories</option>
+                    <option value="">All categories</option>
                                                                         <option value="19"
-                    >One                </option>
+                    >Market Reports                  </option>
                    
                                                       <option value="18"
-                    >Two                </option>
+                    >News &amp; Views                  </option>
                    
                                                       <option value="15"
-                    >Three                  </option>
-                    <option value="15"
-                    >Four                  </option>
-                    <option value="15"
-                    >Five                  </option>
+                    >Press Releases                  </option>
                    
                                      
                                                     </select>
@@ -378,7 +377,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                   <option value="">All countries
                 </option>
                                                 <option value="8"
-                  >India                </option>
+                  >Indonesia                </option>
                                 <option value="9"
                   >Malaysia                </option>
                                 <option value="10"
@@ -392,8 +391,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 
             </div>
             <div class="filter__item">
-                
-              <select name="date_filter" >
+              <select name="date_filter">
                 <option value="">All years</option>
                                                 <option value="39"
                   >2022                </option>
@@ -421,103 +419,315 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
     </div>
     <div class="news-list__block g-cleared">
       <div class="news-list__row g-nopadding col-lg-12 col-md-12 col-xs-12">
-            
-<?php
-    
-      $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
- 
-  $args = array(
-               'posts_per_page' => 2,
-               'paged' => $paged
-             );
-			 
-$customQuery = new WP_Query($args);
 
-
-
-?> 
-
-<!-- Step 2: Display the Posts we Queried in the Step 1 -->
-
-<div class="wrap">
- 
-	<div id="primary" class="content-area">
-		
-		<main id="main" class="site-main" role="main">
-		
-			<?php
-			
-			if($customQuery->have_posts() ): 
-			
-               while($customQuery->have_posts()) :
-                   
-				       $customQuery->the_post();
-					   
-					     global $post;
-                ?>
-		
-		          <div class ="news-list__row g-nopadding col-lg-12 col-md-12 col-xs-12">
-				  
-						<ul class ="cq-posts-list">
-						
-						 <li>
-						   <h3 class ="cq-h3"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h3>
-								<div>
-								  <ul>
-									<div>
-											<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-									</div>
-								  </ul>
-								  
-								  <ul>
-											<p><?php echo the_content(); ?></p>
-								  </ul>
-								
-								</div>
-						  </li>
-						</ul>
-				</div> <!-- end blog posts -->
-						  
-			<?php endwhile; 
-			
-	     endif; 
-	 
-			 wp_reset_query();
-			 
-			// Step  3 : Call the Pagination Function Here  
-			 
-			if (function_exists("cq_pagination")) {
-				
-				  cq_pagination($customQuery->max_num_pages); 
-			 
-			}
-					
-			?>	
-
-    
-			</main><!-- #main -->
-			
-		</div><!-- #primary -->
-			
-	</div><!-- .wrap -->
-        <div class="custom-pagination">
-              <!-- <ul class="page-numbers"><li><span class="previous page-numbers"> < </span></li><li><span aria-current="page" class="page-numbers current">1</span></li><li><a class="page-numbers" href="?pageid=2">2</a></li><li><a class="page-numbers" href="?pageid=3">3</a></li><li><a class="page-numbers" href="?pageid=4">4</a></li><li><a class="page-numbers" href="?pageid=5">5</a></li><li><a class="next page-numbers" href="?pageid=12"> > </a></li></ul>        </div> -->
+                              <div class="news-list__item  g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/12th-propertyguru-asia-property-awards-singapore-search-for-the-finest-real-estate-as-market-sentiment-improves/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/05/APA12May-0872-1024x683.jpg" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/12th-propertyguru-asia-property-awards-singapore-search-for-the-finest-real-estate-as-market-sentiment-improves/" >
+                  <p class="detail_date">
+                                                                                             May 2022, Singapore, Press Releases                            </p>
+                  <h6>
+                                            12th PropertyGuru Asia Property Awards (Singapore) sear...                                      </h6>
+                <p class="news__text">
+                                          Entries and nominations for the 12th PropertyGuru Asia Property Awards (Singapore) are now open, unt..                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/12th-propertyguru-asia-property-awards-singapore-search-for-the-finest-real-estate-as-market-sentiment-improves/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item  g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/propertyguru-group-limited-to-report-first-quarter-2022-financial-results-on-may-26-2022/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/05/PG_Group_Logo_Group_03-1017x1024.png" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/propertyguru-group-limited-to-report-first-quarter-2022-financial-results-on-may-26-2022/" >
+                  <p class="detail_date">
+                                                                                             May 2022, Singapore, Press Releases                            </p>
+                  <h6>
+                                            PropertyGuru Group Limited to Report First Quarter 2022...                                      </h6>
+                <p class="news__text">
+                                          Management will host a conference call to discuss the Company's financial results and outlook.                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/propertyguru-group-limited-to-report-first-quarter-2022-financial-results-on-may-26-2022/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item news-list__item_last g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/8th-propertyguru-indonesia-property-awards-expand-list-of-2022-categories-as-real-estate-market-slowly-rebounds/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/05/IPA-2022-Launch-1024x683.jpg" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/8th-propertyguru-indonesia-property-awards-expand-list-of-2022-categories-as-real-estate-market-slowly-rebounds/" >
+                  <p class="detail_date">
+                                                                                             May 2022, Indonesia, Press Releases                            </p>
+                  <h6>
+                                            8th PropertyGuru Indonesia Property Awards expand list ...                                      </h6>
+                <p class="news__text">
+                                          The 8th PropertyGuru Indonesia Property Awards will see an expansion of 2022 categories, and have mo..                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/8th-propertyguru-indonesia-property-awards-expand-list-of-2022-categories-as-real-estate-market-slowly-rebounds/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item  g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/2022-propertyguru-asia-property-awards-india-launches-in-revitalised-property-market-nominations-open/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/04/2022-APA-India-launch-1024x681.jpg" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/2022-propertyguru-asia-property-awards-india-launches-in-revitalised-property-market-nominations-open/" >
+                  <p class="detail_date">
+                                                                                             April 2022, Thailand, Press Releases                            </p>
+                  <h6>
+                                            2022 PropertyGuru Asia Property Awards (India)  launch...                                      </h6>
+                <p class="news__text">
+                                          The 3rd PropertyGuru Asia Property Awards (India) launches in a revitalised property market, with no..                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/2022-propertyguru-asia-property-awards-india-launches-in-revitalised-property-market-nominations-open/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item  g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/propertyguru-beats-adjusted-ebitda-forecast-in-strong-full-year-2021-performance/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/04/PG_Group_Logo_Group_03-1-1017x1024-1.png" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/propertyguru-beats-adjusted-ebitda-forecast-in-strong-full-year-2021-performance/" >
+                  <p class="detail_date">
+                                                                                             April 2022, Indonesia, Malaysia, Singapore, Thailand, Vietnam, News &amp; Views                            </p>
+                  <h6>
+                                            PropertyGuru Beats Adjusted EBITDA Forecast in Strong F...                                      </h6>
+                <p class="news__text">
+                                          The company delivered S$100.7 Million in Full Year Revenue, Growing 22.7% Over Previous Year                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/propertyguru-beats-adjusted-ebitda-forecast-in-strong-full-year-2021-performance/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item news-list__item_last g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/8th-propertyguru-vietnam-property-awards-return-to-hcmc-amid-rising-consumer-confidence/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/04/D5D44EA1-8C88-4F8D-B52B-F0DB1755B0F8-1024x671.png" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/8th-propertyguru-vietnam-property-awards-return-to-hcmc-amid-rising-consumer-confidence/" >
+                  <p class="detail_date">
+                                                                                             March 2022, Thailand, Press Releases                            </p>
+                  <h6>
+                                            8th PropertyGuru Vietnam Property Awards return to HCMC...                                      </h6>
+                <p class="news__text">
+                                          The 8th PropertyGuru Vietnam Property Awards has returned to Ho Chi Minh City amid rising consumer c..                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/8th-propertyguru-vietnam-property-awards-return-to-hcmc-amid-rising-consumer-confidence/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item  g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/propertyguru-appoints-shyn-yee-ho-strangas-as-managing-director-for-data-and-software-solutions-to-accelerate-digital-transformation-for-property-industry/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/03/Expedia_Shyn-Yee-Ho-Strangas_01-683x1024.jpg" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/propertyguru-appoints-shyn-yee-ho-strangas-as-managing-director-for-data-and-software-solutions-to-accelerate-digital-transformation-for-property-industry/" >
+                  <p class="detail_date">
+                                                                                               March 2022, Indonesia, Malaysia, Singapore, Thailand, Vietnam, Market Reports,News &amp; View..                            </p>
+                  <h6>
+                                            PropertyGuru Appoints Shyn Yee Ho-Strangas as Managing ...                                      </h6>
+                <p class="news__text">
+                                          Shyn Yee will drive the vision and strategy with a focus on enterprise customers                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/propertyguru-appoints-shyn-yee-ho-strangas-as-managing-director-for-data-and-software-solutions-to-accelerate-digital-transformation-for-property-industry/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item  g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/10th-propertyguru-philippines-property-awards-programme-launches-with-resurgent-optimism-in-the-real-estate-market/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/03/Fairmont-web-35-1024x684.jpg" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/10th-propertyguru-philippines-property-awards-programme-launches-with-resurgent-optimism-in-the-real-estate-market/" >
+                  <p class="detail_date">
+                                                                                             March 2022, Thailand, Press Releases                            </p>
+                  <h6>
+                                            10th PropertyGuru Philippines Property Awards programme...                                      </h6>
+                <p class="news__text">
+                                          The 10th PropertyGuru Philippines Property Awards programme launches with resurgent optimism in the ..                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/10th-propertyguru-philippines-property-awards-programme-launches-with-resurgent-optimism-in-the-real-estate-market/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item news-list__item_last g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/propertyguru-successfully-completes-business-combination-with-bridgetown-2-holdings/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/03/PG_Group_Logo_Group_03-1017x1024.png" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/propertyguru-successfully-completes-business-combination-with-bridgetown-2-holdings/" >
+                  <p class="detail_date">
+                                                                                             March 2022, Indonesia, Malaysia, Singapore, Thailand, Vietnam, News &amp; Views                            </p>
+                  <h6>
+                                            PropertyGuru Successfully Completes Business Combinatio...                                      </h6>
+                <p class="news__text">
+                                          PropertyGuru will ring the NYSE’s opening bell on March 18 and begin trading under the ticker “P..                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/propertyguru-successfully-completes-business-combination-with-bridgetown-2-holdings/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item  g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/bridgetown-2-shareholders-approve-business-combination-with-propertyguru/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/03/PG_Group_Logo_Group_03-1017x1024.png" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/bridgetown-2-shareholders-approve-business-combination-with-propertyguru/" >
+                  <p class="detail_date">
+                                                                                             March 2022, Singapore, Market Reports,News &amp; Views,Press Releases                            </p>
+                  <h6>
+                                            Bridgetown 2 Shareholders Approve Business Combination ...                                      </h6>
+                <p class="news__text">
+                                          Bridgetown 2 today announced that Bridgetown 2 shareholders approved the previously announced busine..                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/bridgetown-2-shareholders-approve-business-combination-with-propertyguru/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item  g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/17th-propertyguru-thailand-property-awards-programme-opens-as-real-estate-market-sets-forth-on-path-to-recovery/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/03/PropertyGuru-Thailand-Property-Awards-1024x681.jpg" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/17th-propertyguru-thailand-property-awards-programme-opens-as-real-estate-market-sets-forth-on-path-to-recovery/" >
+                  <p class="detail_date">
+                                                                                             March 2022, Thailand, Press Releases                            </p>
+                  <h6>
+                                            17th PropertyGuru Thailand Property Awards programme op...                                      </h6>
+                <p class="news__text">
+                                          The longest-running real estate awards programme in Thailand is set to make a comeback as an exclusi..                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/17th-propertyguru-thailand-property-awards-programme-opens-as-real-estate-market-sets-forth-on-path-to-recovery/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                        <div class="news-list__item news-list__item_last g-nopadding  col-lg-4 col-md-4 col-xs-12 col-sm-6">
+              <div class="news-list__image">
+                <a class="news-list__imageAnchor" href="https://www.propertygurugroup.com/newsroom/more-than-half-of-singaporeans-agree-with-new-property-cooling-measures-those-not-in-favour-find-greater-difficulty-in-affording-property-of-choice-propertyguru-study/" >
+                                  
+                                      <img src="https://www.propertygurugroup.com/wp-content/uploads/2022/03/CSS_H1_2022_Article_Hero_Image.jpg" alt="Newsroom">
+                                                </a>
+              </div>
+              <div class="news-list__detail">
+                <a class="news-list__detailAnchor" href="https://www.propertygurugroup.com/newsroom/more-than-half-of-singaporeans-agree-with-new-property-cooling-measures-those-not-in-favour-find-greater-difficulty-in-affording-property-of-choice-propertyguru-study/" >
+                  <p class="detail_date">
+                                                                                             March 2022, Singapore, Press Releases                            </p>
+                  <h6>
+                                            More than Half of Singaporeans Agree with New Property ...                                      </h6>
+                <p class="news__text">
+                                          The new PropertyGuru study revealed more than half of Singaporeans agree with the new December 2021 ..                                    </p>
+                <!-- <span class="red" href="https://www.propertygurugroup.com/newsroom/more-than-half-of-singaporeans-agree-with-new-property-cooling-measures-those-not-in-favour-find-greater-difficulty-in-affording-property-of-choice-propertyguru-study/">Read more</span> -->
+              </a>
+              </div>
+            </div>
+                                  </div>
         </div>
+
+       
+
+    <!-- Pagination & Post Show Query -->
+    <?php
+        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+        $args = array(
+           'posts_per_page' => 2,
+           'paged' => $paged
+        );	 
+        $customQuery = new WP_Query($args);
+    ?>
+    <div class="wrap">
+ 
+ <div id="primary" class="content-area">
+     
+     <main id="main" class="site-main" role="main">
+     
+         <?php
+         
+         if($customQuery->have_posts() ): 
+         
+            while($customQuery->have_posts()) :
+                
+                    $customQuery->the_post();
+                    
+                      global $post;
+             ?>
+     
+               <div class ="inner-content-wrap">
+               
+                     <ul class ="cq-posts-list">
+                     
+                      <li>
+                        <h3 class ="cq-h3"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h3>
+                             <div>
+                               <ul>
+                                 <div>
+                                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+                                 </div>
+                               </ul>
+                               
+                               <ul>
+                                         <p><?php echo the_content(); ?></p>
+                               </ul>
+                             
+                             </div>
+                       </li>
+                     </ul>
+             </div> <!-- end blog posts -->
+                       
+         <?php endwhile; 
+         
+      endif; 
+  
+          wp_reset_query();
+          
+    
+    
+    if (function_exists("cq_pagination")) {
+        cq_pagination($customQuery->max_num_pages); 
+    }   
+    ?>
+
+
+
+
+        <div class="custom-pagination">
+              
+   </div>
  </section>
 </div>
 <!-- news portion ends here -->
 
-
-
-
-
-
-
-
         <div id="custom_html-2" class="widget_text platform__contact-block"><h2 class="">Contact Us</h2><div class="textwidget custom-html-widget"><h3 class="text-center">For media enquiries please contact:</h3>
 <div class="platform__contact-list platform__contact-list_newsroom">
 	<div class="platform__contact-list-item ">
-	  <a href="/cdn-cgi/l/email-protection#f59890919c94909b84809c878cb585879a859087818c92808780db969a98db8692"><i class="g-icon g-icon_email"></i><span class="__cf_email__" data-cfemail="a6cbc3c2cfc7c3c8d7d3cfd4dfe6d6d4c9d6c3d4d2dfc1d3d4d388c5c9cb88d5c1">[email&#160;protected]</span></a>
+	  <a href="/cdn-cgi/l/email-protection#610c04050800040f10140813182111130e1104131518061413144f020e0c4f1206"><i class="g-icon g-icon_email"></i><span class="__cf_email__" data-cfemail="81ece4e5e8e0e4eff0f4e8f3f8c1f1f3eef1e4f3f5f8e6f4f3f4afe2eeecaff2e6">[email&#160;protected]</span></a>
 	</div>
 </div></div></div>    
     <footer>
@@ -560,6 +770,7 @@ $customQuery = new WP_Query($args);
 </ul></div>
                 </div>
                 <!--<div class="col-sm-3 col-md-2 footer__col footer__col-padding">
+
                     <h6 class='white'><a href="/property-seekers/" class="white">Property Seekers</a></h6>
                                     </div>-->
                 <div class="col-sm-3 col-md-3 footer__col footer__col-padding">
@@ -683,12 +894,14 @@ $customQuery = new WP_Query($args);
 </ul></div>
                 </div>
                 <div class="col-md-2 footer__col footer__col-list">
+
                     <h6 class='white'><a href="/property-seekers/" class="white">Property Seekers</a></h6>
                     <div class="menu-footer-group-1-container"><ul id="menu-footer-group-4" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3135"><a href="https://www.propertygurugroup.com/our-story/">Our Story</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3134"><a href="https://www.propertygurugroup.com/our-leadership/">Our Leadership</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3133"><a href="https://www.propertygurugroup.com/sustainability/">Sustainability</a></li>
 </ul></div>                </div>
                 <div class="col-md-2 footer__col footer__col-list">
+
                     <h6 class='white'><a href="/partner-with-us/" class="white">Partner With Us</a></h6>
                     <div class="menu-footer-group-8-container"><ul id="menu-footer-group-10" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3136"><a href="https://www.propertygurugroup.com/property-seekers/">Property Seekers</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3137"><a href="/our-services/#real_estate_agents">Real Estate Agents</a></li>
@@ -700,11 +913,17 @@ $customQuery = new WP_Query($args);
                     <div class="menu-footer-group-9-container"><ul id="menu-footer-group-11" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3140"><a href="https://www.propertygurugroup.com/our-people-culture/">Our People &#038; Culture</a></li>
 </ul></div>                </div>
                 <div class="col-md-2 footer__col footer__col-list ">
+
                     <h6 class='white'><a href="/Investors" class="white">Investors</a></h6>
                 </div>
                 <div class="col-md-2 footer__col footer__col-list ">
+
                     <h6 class='white'><a href="/newsroom" class="white">Newsroom</a></h6>
                 </div>
+
+
+
+
             </div> -->
 
 
