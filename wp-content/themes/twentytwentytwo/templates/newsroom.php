@@ -33,6 +33,8 @@
 	<!-- / Yoast SEO plugin. -->
 
 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css' rel='stylesheet'>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
@@ -662,9 +664,9 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
         );	 
         $customQuery = new WP_Query($args);
     ?>
-    <div class="wrap">
+<div class="wrap">
  
- <div id="primary" class="content-area">
+ <div id="primary" class="content-area ">
      
      <main id="main" class="site-main" role="main">
      
@@ -679,28 +681,22 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                       global $post;
              ?>
      
-               <div class ="inner-content-wrap">
-               
-                     <ul class ="cq-posts-list">
-                     
-                      <li>
-                        <h3 class ="cq-h3"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h3>
-                             <div>
-                               <ul>
-                                 <div>
-                                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+               <div>
+                     <ul>
+                             <div class="news-list__block g-cleared">
+                                 <div class="news-list__row g-nopadding col-lg-12 col-md-12 col-xs-12">
+                                         <a class="news-list__image" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
                                  </div>
-                               </ul>
-                               
-                               <ul>
-                                         <p><?php echo the_content(); ?></p>
-                               </ul>
-                             
-                             </div>
-                       </li>
-                     </ul>
-             </div> <!-- end blog posts -->
-                       
+                                 <div class="news-list__detailAnchor">
+                                    <div class="detail_date">
+                                        <div class="news__text">
+                                            <h5 class="news-list__detailAnchor"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h5>
+                                                    <p><?php echo the_content(); ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>          
+             </div>    
          <?php endwhile; 
          
       endif; 
@@ -712,6 +708,11 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
     if (function_exists("cq_pagination")) {
         cq_pagination($customQuery->max_num_pages); 
     }   
+
+    else {
+        echo "Pagination Is Not Worked";
+    }
+
     ?>
 
 

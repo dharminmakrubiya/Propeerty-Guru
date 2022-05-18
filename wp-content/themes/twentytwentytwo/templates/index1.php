@@ -426,12 +426,12 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
     
       $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
  
-  $args = array(
-               'posts_per_page' => 2,
-               'paged' => $paged
-             );
-			 
-$customQuery = new WP_Query($args);
+        $args = array(
+                    'posts_per_page' => 2,
+                    'paged' => $paged
+                    );
+                    
+        $customQuery = new WP_Query($args);
 
 
 
@@ -456,7 +456,7 @@ $customQuery = new WP_Query($args);
 					     global $post;
                 ?>
 		
-		          <div class ="news-list__row g-nopadding col-lg-12 col-md-12 col-xs-12">
+		          <div class ="inner-content-wrap">
 				  
 						<ul class ="cq-posts-list">
 						

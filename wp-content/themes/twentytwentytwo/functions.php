@@ -187,12 +187,13 @@ function create_posttype() {
             'has_archive' => true,
             'rewrite' => array('slug' => 'movies'),
             'show_in_rest' => true,
-  
+			
         )
     );
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
+
 
 //  Custom pagination function 
 	
@@ -269,3 +270,31 @@ echo $event_CUSTOM_FIELD_NAME;
 else
     return $event_CUSTOM_FIELD_NAME;
 }
+
+
+function category_wise_testimonial()   {
+    $cat = [];
+    $array = [];
+	$content = [];
+    $cat=get_categories();
+    foreach($cat as $category){
+        $args = array( 'posts_per_page' => 5, 'category_name' => $category->name, 'post_type' => 'testimonial');
+        $query = new WP_Query( $args );
+        $content .= '<h2>category:-'.$category->name.'</h2>';
+        while($query->have_posts()) : 
+            $query->the_post();
+            $link = get_permalink();
+            $title = get_the_title();
+            $date = get_the_date(); 
+            $content .= '<div>' . get_the_post_thumbnail() . '</div>';                            
+            $content .= '<div>';
+            $content .= '<h3><a href='.$link.' target="_top">'.$title.' / '.$date. '</a></h3>';
+            $content .= '<p>' .get_the_excerpt(). '</p>';
+            $content .= '</div>';
+        endwhile;
+    }
+    return $content;
+}
+add_shortcode('category_wise_testimonial', 'category_wise_testimonial' );
+
+
