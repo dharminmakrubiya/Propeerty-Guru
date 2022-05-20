@@ -173,30 +173,8 @@ function be_event_query( $query ) {
 add_action( 'pre_get_posts', 'be_event_query' );
 
 
-// Our custom post type function
-function create_posttype() {
-  
-    register_post_type( 'movies',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Movies' ),
-                'singular_name' => __( 'Movie' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'movies'),
-            'show_in_rest' => true,
-			
-        )
-    );
-}
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
-
-
 //  Custom pagination function 
-	
+
 function cq_pagination($pages = '', $range = 4)
 {
 	$showitems = ($range * 2)+1;
@@ -238,21 +216,21 @@ function cq_pagination($pages = '', $range = 4)
  * @param int $post (default: null)
  * @return string
  */
-  
+
 function get_event_YOUR_CUSTOM_FIELD_NAME( $post = null ) 
 {
-  
-    $post = get_post( $post );
-  
-    if ( $post->post_type !== 'event_listing' ) 
-        return '';
-     
-    $event_FIELD_NAME   = $post->_YOUR_CUSTOM_FIELD_NAME;
-  
-    return apply_filters( 'display_event_FIELD_NAME', $event_FIELD_NAME, $post );
- 
+
+	$post = get_post( $post );
+
+	if ( $post->post_type !== 'event_listing' ) 
+		return '';
+
+	$event_FIELD_NAME   = $post->_YOUR_CUSTOM_FIELD_NAME;
+
+	return apply_filters( 'display_event_FIELD_NAME', $event_FIELD_NAME, $post );
+
 }
-  
+
 /**
  * Display or retrieve the current event custom field.
  *
@@ -260,25 +238,107 @@ function get_event_YOUR_CUSTOM_FIELD_NAME( $post = null )
  * @param mixed $id (default: null)
  * @return void
  */
-  
+
 function display_event_YOUR_CUSTOM_FIELD_NAME( $before = '', $after = '', $echo = true, $post = null ) 
 {
-$event_CUSTOM_FIELD_NAME = get_event_YOUR_CUSTOM_FIELD_NAME( $post );
-$event_CUSTOM_FIELD_NAME = $before . $event_CUSTOM_FIELD_NAME . $after;
-if ( $echo )
-echo $event_CUSTOM_FIELD_NAME;
-else
-    return $event_CUSTOM_FIELD_NAME;
+	$event_CUSTOM_FIELD_NAME = get_event_YOUR_CUSTOM_FIELD_NAME( $post );
+	$event_CUSTOM_FIELD_NAME = $before . $event_CUSTOM_FIELD_NAME . $after;
+	if ( $echo )
+		echo $event_CUSTOM_FIELD_NAME;
+	else
+		return $event_CUSTOM_FIELD_NAME;
 }
 
 
-function category_wise_testimonial()   {
+// function category_wise_testimonial()   {
+// 	$cat = [];
+// 	$array = [];
+// 	$cat=get_categories();
+// 	foreach($cat as $category){
+// 		$args = array( 'posts_per_page' => 5, 'category_name' => $category->name, 'post_type' => 'testimonial');
+// 		$query = new WP_Query( $args );
+// 		$content .= '<h2>category:-'.$category->name.'</h2>';
+// 		while($query->have_posts()) : 
+// 			$query->the_post();
+// 			$link = get_permalink();
+// 			$title = get_the_title();
+// 			$date = get_the_date(); 
+// 			$content .= '<div>' . get_the_post_thumbnail() . '</div>';                            
+// 			$content .= '<div>';
+// 			$content .= '<h3><a href='.$link.' target="_top">'.$title.' / '.$date. '</a></h3>';
+// 			$content .= '<p>' .get_the_excerpt(). '</p>';
+// 			$content .= '</div>';
+// 		endwhile;
+// 	}
+// 	return $content;
+// }
+// add_shortcode('category_wise_testimonial', 'category_wise_testimonial' );
+
+
+
+function wpdocs_five_posts_on_homepage( $query ) {
+	if ( $query->is_home() && $query->is_main_query() ) {
+		$query->set( 'posts_per_page', 5 );
+	}
+}
+add_action( 'pre_get_posts', 'wpdocs_five_posts_on_homepage' );
+
+
+
+// Create a Custom Post Type Module
+function create_posttype() {
+
+	register_post_type( 'newsroom',
+		array(
+			'labels' => array(
+				'name' => __( 'Newsroom' ),
+				'singular_name' => __( 'Newsroom' ),
+				'hierarchical' => false,
+				
+			),
+			'supports' => array(
+				'title',
+				'editor',
+				'excerpt',
+				'custom-fields',
+				'thumbnail',
+				'page-attributes'
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'newsroom'),
+			'show_in_rest' => true,
+
+
+
+		)
+	);
+
+
+}
+
+add_post_type_support('page', 'thumbnail');
+
+add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+
+add_action( 'init', 'create_posttype' );
+
+add_theme_support( 'post-thumbnails' );
+
+
+
+
+
+
+
+
+
+function custom_post_type()   {
     $cat = [];
     $array = [];
-	$content = [];
     $cat=get_categories();
     foreach($cat as $category){
-        $args = array( 'posts_per_page' => 5, 'category_name' => $category->name, 'post_type' => 'testimonial');
+        $args = array( 'posts_per_page' => 5, 'category_name' => $category->name, 'post_type' => 'newsroom');                
         $query = new WP_Query( $args );
         $content .= '<h2>category:-'.$category->name.'</h2>';
         while($query->have_posts()) : 
@@ -295,6 +355,15 @@ function category_wise_testimonial()   {
     }
     return $content;
 }
-add_shortcode('category_wise_testimonial', 'category_wise_testimonial' );
+add_shortcode('custom_post_type', 'custom_post_type' );
+
+
+add_filter( 'some_args', 'some_search_args' );
+
+
+
+
+
+
 
 
